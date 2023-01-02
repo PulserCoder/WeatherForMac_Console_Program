@@ -1,0 +1,44 @@
+{
+  'coord': {
+    'lon': 47.2628,
+    'lat': 56.1168
+  },
+  'weather': [
+    {
+      'id': 803,
+      'main': 'Clouds',
+      'description': 'broken clouds',
+      'icon': '04n'
+    }
+  ],
+  'base': 'stations',
+  'main': {
+    'temp': 272.03,
+    'feels_like': 265.03,
+    'temp_min': 272.03,
+    'temp_max': 272.03,
+    'pressure': 1004,
+    'humidity': 86
+  },
+  'visibility': 10000,
+  'wind': {
+    'speed': 9,
+    'deg': 290,
+    'gust': 14
+  },
+  'clouds': {
+    'all': 75
+  },
+  'dt': 1672681771,
+  'sys': {
+    'type': 1,
+    'id': 9042,
+    'country': 'RU',
+    'sunrise': 1672636965,
+    'sunset': 1672662383
+  },
+  'timezone': 10800,
+  'id': 569696,
+  'name': 'Cheboksary',
+  'cod': 200
+}

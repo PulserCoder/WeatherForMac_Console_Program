@@ -1,0 +1,26 @@
+#!/Users/pavelkuzmin/weather/venv/bin/python
+
+from coordinates import get_coordinates
+from weather_api_service import get_weather
+from printer import format_weather
+from exeptions import *
+
+def main():
+    try:
+        coordinates = get_coordinates()
+    except EmptyEnv:
+        print('Failed! We cant get your coordinates, maybe you dont have .env\nWe recommend to check README.md')
+        exit(0)
+    except IncorrectEnv:
+        print('Failed! We cant get your coordinates, your .env is incorrect')
+        exit(0)
+    try:
+        weather = get_weather(coordinates)
+    except ApiServiceError:
+        print('Failed! Problem with API, wait a bit')
+        exit(0)
+    print(format_weather(weather))
+
+
+if __name__ == '__main__':
+    main()
